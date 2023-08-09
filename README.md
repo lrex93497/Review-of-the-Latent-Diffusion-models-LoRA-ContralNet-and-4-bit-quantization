@@ -1,4 +1,4 @@
-# Review of the Latent Diffusion models, LORA, ContralNet and 4-bit quantization
+# Review of the Latent Diffusion models, LoRA, ContralNet and 4-bit quantization
 
 Article completion date: 29 Apr 2023
 <br/><br/>This article has been written to facilitate the acquisition of knowledge on LDMs and their associated techniques. Hopefully, it can also provide useful information to others.
@@ -8,7 +8,10 @@ Article completion date: 29 Apr 2023
 - [Abstract](#abstract)
 - [Introduction](#introduction)
 - [Latent Diffusion models](#latent-diffusion-models)
-- [Problems with Latent Diffusion Models and attempts to improve it: Concept control with Textual Inversion or/and LoRA](#problems-with-latent-diffusion-models-and-attempts-to-improve-it-concept-control-with-textual-inversion-or-and-lora)
+- [Problems with Latent Diffusion Models and attempts to improve it: Concept control with Textual Inversion or/and LoRA](#problems-with-latent-diffusion-models-and-attempts-to-improve-it-concept-control-with-textual-inversion-orand-lora)
+- [Problems with Latent Diffusion Models and attempts to improve it: Detailed image control](#problems-with-latent-diffusion-models-and-attempts-to-improve-it-detailed-image-control)
+- [LDMs is slow, what to do?](#ldms-is-slow-what-to-do)
+- [Conclusion and future works](#conclusion-and-future-works)
 - [References](#references)
 
 # Abstract
@@ -289,8 +292,7 @@ my experience, the file sizes of trained LoRA is significantly larger
 than that of Textual Inversion. Usually, the LoRA file need 30 to 300
 MB, when compared to 1MB\> on Textual Inversion.
 
-**Problems with Latent Diffusion Models and attempts to improve it:
-Detailed image control**
+# Problems with Latent Diffusion Models and attempts to improve it: Detailed image control
 
 Other than using Textual Inversion to add a new concept to the model,
 what about controlling how the object inside the generated image exists?
@@ -428,7 +430,7 @@ Textual Inversion. In my observation, the Openpose ControlNet model has
 as the ControlNet model is needed to move to memory when using the LDMs
 to generate images.
 
-**LDMs is slow, what to do?**
+# LDMs is slow, what to do?
 
 One of the problems of LDMs is the speed of generating images is slow.
 Although switching to diffuse the image itself to diffuse the latent
@@ -483,7 +485,7 @@ model, it will be comparable to the faster model like GAN mentioned
 without a significant quality drop in terms of image quality in
 practical use.
 
-**Conclusion and future works**
+# Conclusion and future works
 
 The LDMs is a robust image generation model that can create many types
 of images. Even if the concept that the user wants to create is not
@@ -516,7 +518,7 @@ the future. Not at all, the quantization study can also carry out on the
 C-LoRA and ControlNet mentioned in order to reduce the computational
 cost such as memory usage and process time on them.
 
-**Reference**
+# References
 
 andite. (2023). Andite/anything-v4.0 · hugging face. Hugging Face.
 Retrieved April 29, 2023, from

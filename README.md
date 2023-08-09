@@ -1,7 +1,7 @@
 # Review of the Latent Diffusion models, LoRA, ContralNet and 4-bit quantization
 
 Article completion date: 29 Apr 2023
-<br/><br/>This article has been written to facilitate the acquisition of knowledge on LDMs and their associated techniques. Hopefully, it can also provide useful information to others.
+<br/><br/>This article has been written to facilitate the acquisition of knowledge on LDMs and some of their associated techniques. Hopefully, it can also provide useful information to others.
 
 # Index
 

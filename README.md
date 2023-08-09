@@ -1,7 +1,18 @@
-**<u>Review of the Latent Diffusion models, LORA, ContralNet and 4-bit
-quantization</u>**
+# Review of the Latent Diffusion models, LORA, ContralNet and 4-bit quantization
 
-**Abstract:** This paper discusses the architecture of Latent Diffusion
+Article completion date: 29 Apr 2023
+<br/><br/>This article has been written to facilitate the acquisition of knowledge on LDMs and their associated techniques. Hopefully, it can also provide useful information to others.
+
+# Index
+
+- [Abstract](#abstract)
+- [Introduction](#introduction)
+- [Latent Diffusion models](#latent-diffusion-models)
+- [Problems with Latent Diffusion Models and attempts to improve it: Concept control with Textual Inversion or/and LoRA](#problems-with-latent-diffusion-models-and-attempts-to-improve-it-concept-control-with-textual-inversion-or-and-lora)
+- [References](#references)
+
+# Abstract
+This paper discusses the architecture of Latent Diffusion
 models (LDMs). The problems LDMs have, as well as the improvement
 attempts respect these problems in order to make LDMs more capable to
 generate images that can satisfy user requirements as fast as possible.
@@ -11,7 +22,7 @@ weights were discussed in this paper with some analysis of their
 performance. At the end of the paper, some future research directions on
 LDMs were also mentioned.
 
-**Introduction**
+# Introduction
 
 In recent years, the image generative model become a more and more
 popular research topic. The goal is to generate an accurate image wanted
@@ -62,7 +73,7 @@ requirement as fast as possible. Below, we will discuss the working
 principle of LDMs, discuss its problems, and the recent attempts to
 improve these problems.
 
-**Latent Diffusion models**
+# Latent Diffusion models
 
 LDMs are very similar to normal DMs and in fact based on DMs.
 
@@ -174,8 +185,7 @@ Figure d, generated image with prompt “A pig flying on the sky.”
 We can see the generated image is reflecting exactly what we want, and
 the image is very realistic.
 
-**Problems with Latent Diffusion Models and attempts to improve it:
-Concept control with Textual Inversion or/and LoRA**
+# Problems with Latent Diffusion Models and attempts to improve it: Concept control with Textual Inversion or/and LoRA
 
 The LDMs application like the trained model of stable diffusion is
 robust to generate a variety of images according to user demands
@@ -548,10 +558,7 @@ Hu, E. J., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., ... &
 Chen, W. (2021). Lora: Low-rank adaptation of large language
 models. *arXiv preprint arXiv:2106.09685*.
 
-|                                                                                                                                                        |     |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
-| Mansimov, E., Parisotto, E., Ba, J. L., & Salakhutdinov, R. (2015). Generating images from captions with attention. *arXiv preprint arXiv:1511.02793*. |     |
-|                                                                                                                                                        |     |
+Mansimov, E., Parisotto, E., Ba, J. L., & Salakhutdinov, R. (2015). Generating images from captions with attention. *arXiv preprint arXiv:1511.02793*.
 
 Kingma, D. P., & Welling, M. (2013). Auto-encoding variational
 bayes. *arXiv preprint arXiv:1312.6114*.
